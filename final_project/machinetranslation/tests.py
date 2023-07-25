@@ -1,5 +1,5 @@
 import unittest
-from translator import fernchToEnglish, englishToFrench
+from translator import frenchToEnglish, englishToFrench
 
 
 class TestEnglishToFrench(unittest.TestCase):
@@ -14,7 +14,6 @@ class TestEnglishToFrench(unittest.TestCase):
         self.assertEqual(englishToFrench('two'), 'deux')
         self.assertEqual(englishToFrench('book'), 'livre')
 
-
 class TestFrenchToEnglish(unittest.TestCase):
     """
     This class is to test the frenchToEnglish Function
@@ -23,9 +22,9 @@ class TestFrenchToEnglish(unittest.TestCase):
         """ 
         Test cases to test french-english translator
         """
-        self.assertEqual(fernchToEnglish('bonjour'), 'hello')
-        self.assertEqual(fernchToEnglish('deux'), 'two')
-        self.assertEqual(fernchToEnglish('livre'), 'book')
+        self.assertEqual(frenchToEnglish('bonjour'), 'hello')
+        self.assertEqual(frenchToEnglish('deux'), 'two')
+        self.assertEqual(frenchToEnglish('livre'), 'book')
 
 # running thr tests
 unittest.main()

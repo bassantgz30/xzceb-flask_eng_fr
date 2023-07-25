@@ -8,7 +8,7 @@ def englishToFrench(englishText):
     return frenchText
 
 
-def fernchToEnglish(frenchText):
+def frenchToEnglish(frenchText):
 
     englishText = MyMemoryTranslator(source='fr-FR', target='en-US').translate(frenchText)  
 
