@@ -11,8 +11,10 @@ class TestEnglishToFrench(unittest.TestCase):
         Test cases to test english-french translator
         """
         self.assertEqual(englishToFrench('hello'), 'bonjour')
-        self.assertEqual(englishToFrench('two'), 'deux')
+        self.assertEqual(englishToFrench('two'), 'deux' )
         self.assertEqual(englishToFrench('book'), 'livre')
+        self.assertNotEqual(englishToFrench('one'), 'deux' )
+
 
 class TestFrenchToEnglish(unittest.TestCase):
     """
@@ -24,7 +26,9 @@ class TestFrenchToEnglish(unittest.TestCase):
         """
         self.assertEqual(frenchToEnglish('bonjour'), 'hello')
         self.assertEqual(frenchToEnglish('deux'), 'two')
-        self.assertEqual(frenchToEnglish('livre'), 'book')
+        self.assertEqual(frenchToEnglish('livre'), 'book' )
+        self.assertNotEqual(frenchToEnglish('pomme'), 'car' )
+
 
 # running thr tests
 unittest.main()
